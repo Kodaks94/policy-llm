@@ -75,6 +75,18 @@ curl -X POST http://127.0.0.1:8000/ask   -H "Content-Type: application/json"   -
 
  [Sample Output PDF](./Policy_RAG_Sample_Output.pdf)
 
+ ### tests done 
+
+ tests/test_chunking.py::test_build_chunks PASSED                                                                                           [ 11%]
+tests/test_embedding_and_index.py::test_embeddings_shape PASSED                                                                             [ 22%]
+tests/test_embedding_and_index.py::test_vector_store_add PASSED                                                                             [ 33%]
+tests/test_eval.py::test_aggregate_eval PASSED                                                                                              [ 44%] 
+tests/test_generation.py::test_answer_generation PASSED                                                                                     [ 55%]
+tests/test_grounding.py::test_judge_and_enforce PASSED                                                                                      [ 66%]
+tests/test_ingestion.py::test_format_check PASSED                                                                                           [ 77%] 
+tests/test_ingestion.py::test_pii_scan PASSED                                                                                               [ 88%] 
+tests/test_retrieval.py::test_retrieve PASSED                                                                                               [100%]
+
 
 ## 📜 License
 MIT License © 2025
