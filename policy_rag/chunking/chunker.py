@@ -1,5 +1,5 @@
 import re
-from config import MIN_CHUNK_WORDS, CHUNK_OVERLAP_SENTENCES
+from ..config import MIN_CHUNK_WORDS, CHUNK_OVERLAP_SENTENCES
 
 # We split on numbered clauses like "4.2", "3.1.5", etc.
 CLAUSE_SPLIT_RE = r"(?=(?:^|\n)\s*(\d+(?:\.\d+)*\s+))"
