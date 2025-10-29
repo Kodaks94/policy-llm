@@ -2,7 +2,6 @@ import os
 from datetime import datetime
 
 # ---- MODEL CHOICES ----
-# These are Hugging Face models you can swap for bigger ones.
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 LLM_GENERATION_MODEL = os.getenv("LLM_GENERATION_MODEL", "distilgpt2")
 LLM_JUDGE_MODEL = os.getenv("LLM_JUDGE_MODEL", "distilgpt2")
