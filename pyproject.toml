@@ -1,0 +1,26 @@
+[project]
+name = "policy-rag"
+version = "0.1.0"
+description = "Retrieval-Augmented Generation pipeline for policy document Q&A"
+authors = [{ name = "Mahrad Pisheh Var" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pymupdf",
+    "sentence-transformers",
+    "transformers",
+    "torch",
+    "numpy",
+    "wandb",
+    "pytest"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["policy_rag*"]
+exclude = ["data*"]
