@@ -2,7 +2,7 @@
 
 #  Policy-RAG: Automated Policy QA & Validation Pipeline
 
-A production-ready **Retrieval-Augmented Generation (RAG)** pipeline that ingests policy PDFs, validates and cleans them, chunks and embeds content, retrieves context, and uses a **Hugging Face LLM** to answer questions — all while detecting hallucinations and logging metrics to **Weights & Biases (wandb)**.
+A production-ready **Retrieval-Augmented Generation (RAG)** pipeline that ingests policy PDFs, validates and cleans them, chunks and embeds content, retrieves context, and uses a **Hugging Face LLM** to answer questions all while detecting hallucinations and logging metrics to **Weights & Biases (wandb)**.
 
 ---
 
@@ -29,7 +29,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** pipeline that ingest
 
  **Evaluation**
 - Computes precision@k, recall@k, MRR, faithfulness, context precision, and answer relevance.  
-- Drift-ready — just re-run eval periodically to detect performance degradation.
+- Drift-ready just re-run eval periodically to detect performance degradation.
 
 ---
 
