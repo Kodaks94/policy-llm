@@ -77,15 +77,18 @@ curl -X POST http://127.0.0.1:8000/ask   -H "Content-Type: application/json"   -
 
  ### tests done 
 
- tests/test_chunking.py::test_build_chunks PASSED                                                                                           [ 11%]
-tests/test_embedding_and_index.py::test_embeddings_shape PASSED                                                                             [ 22%]
-tests/test_embedding_and_index.py::test_vector_store_add PASSED                                                                             [ 33%]
-tests/test_eval.py::test_aggregate_eval PASSED                                                                                              [ 44%] 
-tests/test_generation.py::test_answer_generation PASSED                                                                                     [ 55%]
-tests/test_grounding.py::test_judge_and_enforce PASSED                                                                                      [ 66%]
-tests/test_ingestion.py::test_format_check PASSED                                                                                           [ 77%] 
-tests/test_ingestion.py::test_pii_scan PASSED                                                                                               [ 88%] 
-tests/test_retrieval.py::test_retrieve PASSED                                                                                               [100%]
+| Test File                           | Test Name                | Status        | Coverage                                                    |
+| ----------------------------------- | ------------------------ | ------------- | ----------------------------------------------------------- |
+| `tests/test_chunking.py`            | `test_build_chunks`      | 🟢 **PASSED** | Chunk generation and continuity logic validated             |
+| `tests/test_embedding_and_index.py` | `test_embeddings_shape`  | 🟢 **PASSED** | Embedding matrix dimensions verified                        |
+| `tests/test_embedding_and_index.py` | `test_vector_store_add`  | 🟢 **PASSED** | Vector store indexing and metadata storage validated        |
+| `tests/test_eval.py`                | `test_aggregate_eval`    | 🟢 **PASSED** | Retrieval and generation metrics aggregation correct        |
+| `tests/test_generation.py`          | `test_answer_generation` | 🟢 **PASSED** | LLM answer formatting and citation logic verified           |
+| `tests/test_grounding.py`           | `test_judge_and_enforce` | 🟢 **PASSED** | Hallucination detection and grounding enforcement validated |
+| `tests/test_ingestion.py`           | `test_format_check`      | 🟢 **PASSED** | Policy format compliance correctly detected                 |
+| `tests/test_ingestion.py`           | `test_pii_scan`          | 🟢 **PASSED** | PII detection and severity classification working           |
+| `tests/test_retrieval.py`           | `test_retrieve`          | 🟢 **PASSED** | Query embedding and top-K retrieval functional              |
+
 
 
 ## 📜 License
